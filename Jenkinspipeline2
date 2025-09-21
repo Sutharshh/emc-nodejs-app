@@ -4,13 +4,13 @@ pipeline {
   environment {
     IMAGE_NAME = 'emc-nodejs-app:latest'
     DOCKERHUB_CREDENTIALS = 'dockerhub-token'  // your Docker Hub credentials ID in Jenkins
-    DOCKERHUB_REPO = 'venkiemc/emcnewrepo'  // replace with your Docker Hub repo
+    DOCKERHUB_REPO = 'sutharsh/emc-nodejs-app'  // replace with your Docker Hub repo
   }
 
   stages {
     stage('Checkout Code') {
       steps {
-        git branch: 'main', url: 'https://github.com/Venkiemc/emc-nodejs-app.git'
+        git branch: 'main', url: 'https://github.com/Sutharshh/emc-nodejs-app.git'
       }
     }
 
